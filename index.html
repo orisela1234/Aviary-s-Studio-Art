@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>הסטודיו של אביה · סדנאות יצירה ואומנות</title>
+  <meta name="description" content="סדנאות יצירה ואומנות עם אביה: חוג יצירה שבועי, סדנאות לאירועים וסדנאות פרטיות לזוגות, למשפחות ולחברות.">
+  <meta name="theme-color" content="#FFFCF8">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="he_IL">
+  <meta property="og:title" content="הסטודיו של אביה · Aviary's Studio Art">
+  <meta property="og:description" content="חוג יצירה שבועי, סדנאות לאירועים וסדנאות פרטיות. לא צריך ניסיון, רק חשק ליצור.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400..700&family=Playpen+Sans+Hebrew:wght@400..600&family=Rubik:wght@300..700&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<!--SITE:START-->
+<div class="page">
+
+  <!-- Reusable hand-drawn marks -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-bird" viewBox="0 0 48 40">
+      <path d="M36 21 47 11.5 44.5 23 38.5 27.5z" fill="currentColor"/>
+      <ellipse cx="26" cy="24" rx="14" ry="10" fill="currentColor"/>
+      <circle cx="14.5" cy="14.5" r="8" fill="currentColor"/>
+      <path d="M7.4 12.2 1 15.8l6.6 2z" fill="var(--beak, #FFD45E)"/>
+      <path d="M21 23.5c5-4.5 12-4 16 .5-5 5.5-12 5-16-.5z" fill="var(--wing, #F4B9CB)"/>
+      <circle cx="12.4" cy="13.2" r="1.6" fill="var(--eye, #FFFCF8)"/>
+      <path d="M24 33.5v4.5M29.5 33v5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-flower" viewBox="0 0 24 24">
+      <g fill="currentColor">
+        <circle cx="12" cy="5.6" r="4.3"/><circle cx="18.2" cy="10.1" r="4.3"/><circle cx="15.8" cy="17.3" r="4.3"/><circle cx="8.2" cy="17.3" r="4.3"/><circle cx="5.8" cy="10.1" r="4.3"/>
+      </g>
+      <circle cx="12" cy="12" r="3.4" fill="var(--flower-center, #FFE193)"/>
+    </symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24">
+      <path d="M12 1c.8 6 4 9.6 11 11-7 1.4-10.2 5-11 11-.8-6-4-9.6-11-11 7-1.4 10.2-5 11-11z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-swirl" viewBox="0 0 84 40">
+      <path d="M3 31c10-18 27-23 31-12s-8 15-11 6 9-20 23-18 22 15 35 4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 64 44">
+      <path d="M4 8c19-7 40 0 48 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M42 28.5l10.5 5.5 2.5-11.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#main">דילוג לתוכן</a>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header" data-header>
+    <div class="wrap header__inner">
+      <a class="logo" href="#top" aria-label="הסטודיו של אביה, חזרה לראש העמוד">
+        <svg class="logo__bird" aria-hidden="true"><use href="#i-bird"/></svg>
+        <span class="logo__text">
+          <span class="logo__he">הסטודיו של אביה</span>
+          <span class="logo__en" lang="en" dir="ltr">Aviary's Studio Art</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="ניווט ראשי">
+        <ul class="nav__list">
+          <li><a href="#services">הסדנאות</a></li>
+          <li><a href="#how">איך זה עובד</a></li>
+          <li><a href="#techniques">מה יוצרים</a></li>
+          <li><a href="#about">קצת עליי</a></li>
+          <li><a href="#faq">שאלות</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm" href="#contact">בואו ניצור</a>
+      </nav>
+
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">פתיחת התפריט</span>
+        <span class="menu-btn__lines" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="progress" aria-hidden="true">
+      <span class="progress__bar"></span>
+      <svg class="progress__bird"><use href="#i-bird"/></svg>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <canvas class="hero__paint" aria-hidden="true"></canvas>
+
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow eyebrow--hand" data-intro style="--d:0">
+            סטודיו ליצירה ואומנות
+            <svg class="eyebrow__arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </p>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="ln"><span class="w" style="--d:80">יוצרים</span> <span class="w" style="--d:160">יחד,</span></span>
+            <span class="ln"><span class="mark"><span class="w" style="--d:260">בצבע</span> <span class="w" style="--d:340">מלא</span><svg class="mark__stroke" viewBox="0 0 300 40" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M8 25C62 14 128 31 190 20s88-4 102 4"/></svg></span></span>
+          </h1>
+
+          <p class="hero__lead" data-intro style="--d:520">
+            סדנאות יצירה ואומנות עם אביה: חוג שבועי קבוע, סדנה שמגיעה אל האירוע שלכם, או מפגש פרטי רק בשבילכם. לא צריך ניסיון, רק חשק ליצור.
+          </p>
+
+          <div class="hero__actions" data-intro style="--d:640">
+            <a class="btn btn--primary" href="#services">לגלות את הסדנאות</a>
+            <a class="btn btn--ghost" href="#contact">לשיחה עם אביה</a>
+          </div>
+
+          <div class="palette" role="group" aria-labelledby="palette-label" data-intro style="--d:780">
+            <p class="palette__label" id="palette-label">
+              <span class="only-mouse">בחרו צבע וציירו על הדף</span>
+              <span class="only-touch">בחרו צבע וגעו בדף</span>
+            </p>
+            <div class="palette__pans">
+              <button class="pan" type="button" data-color="rose" aria-pressed="true" aria-label="ורוד" style="--c:var(--rose)"></button>
+              <button class="pan" type="button" data-color="apricot" aria-pressed="false" aria-label="משמש" style="--c:var(--apricot)"></button>
+              <button class="pan" type="button" data-color="naples" aria-pressed="false" aria-label="צהוב" style="--c:var(--naples)"></button>
+              <button class="pan" type="button" data-color="sage" aria-pressed="false" aria-label="ירוק מרווה" style="--c:var(--sage)"></button>
+              <button class="pan" type="button" data-color="cerulean" aria-pressed="false" aria-label="תכלת" style="--c:var(--cerulean)"></button>
+              <button class="pan" type="button" data-color="lavender" aria-pressed="false" aria-label="לילך" style="--c:var(--lavender)"></button>
+            </div>
+            <button class="palette__clear" type="button">דף חדש</button>
+          </div>
+        </div>
+
+        <div class="hero__art">
+          <figure class="arch" data-speed="-0.04" data-mouse="10">
+            <canvas class="wc" data-scene="hero" aria-hidden="true"></canvas>
+          </figure>
+
+          <a class="snap snap--1" href="#svc-weekly" style="--rot:-7deg; --tape:var(--sage)" data-speed="0.07" data-mouse="22">
+            <canvas class="wc" data-scene="weekly" data-seed="mini" aria-hidden="true"></canvas>
+            <span class="snap__cap">כל שבוע מחדש</span>
+          </a>
+          <a class="snap snap--2" href="#svc-events" style="--rot:6deg; --tape:var(--naples)" data-speed="0.12" data-mouse="30">
+            <canvas class="wc" data-scene="events" data-seed="mini" aria-hidden="true"></canvas>
+            <span class="snap__cap">באירוע שלכם</span>
+          </a>
+          <a class="snap snap--3" href="#svc-private" style="--rot:-3deg; --tape:var(--lavender)" data-speed="0.03" data-mouse="16">
+            <canvas class="wc" data-scene="private" data-seed="mini" aria-hidden="true"></canvas>
+            <span class="snap__cap">רק אתם ואני</span>
+          </a>
+
+          <svg class="doodle doodle--sparkle-a" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          <svg class="doodle doodle--sparkle-b" aria-hidden="true"><use href="#i-sparkle"/></svg>
+          <svg class="doodle doodle--swirl" aria-hidden="true"><use href="#i-swirl"/></svg>
+          <svg class="doodle doodle--flower" aria-hidden="true"><use href="#i-flower"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Ribbons ============ -->
+    <div class="ribbons" aria-hidden="true">
+      <div class="ribbon ribbon--a" data-dir="1">
+        <div class="ribbon__track">
+          <div class="ribbon__set">
+            <span>צבעי מים</span><svg><use href="#i-flower"/></svg>
+            <span>ציור באקריליק</span><svg><use href="#i-flower"/></svg>
+            <span>פיסול בחימר</span><svg><use href="#i-flower"/></svg>
+            <span>קולאז׳</span><svg><use href="#i-flower"/></svg>
+            <span>מקרמה</span><svg><use href="#i-flower"/></svg>
+            <span>רקמה</span><svg><use href="#i-flower"/></svg>
+            <span>הדפס וחותמות</span><svg><use href="#i-flower"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="ribbon ribbon--b" data-dir="-1">
+        <div class="ribbon__track">
+          <div class="ribbon__set">
+            <span>חוג שבועי</span><svg><use href="#i-sparkle"/></svg>
+            <span>ימי הולדת</span><svg><use href="#i-sparkle"/></svg>
+            <span>דייט יצירתי</span><svg><use href="#i-sparkle"/></svg>
+            <span>ערב חברות</span><svg><use href="#i-sparkle"/></svg>
+            <span>זמן משפחה</span><svg><use href="#i-sparkle"/></svg>
+            <span>ימי גיבוש</span><svg><use href="#i-sparkle"/></svg>
+            <span>בת מצווה</span><svg><use href="#i-sparkle"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ Services ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <header class="section-head section-head--split" data-reveal>
+          <div>
+            <p class="eyebrow">הסדנאות</p>
+            <h2 id="services-title">שלוש דרכים ליצור איתי</h2>
+          </div>
+          <p class="section-head__lead">בכל סדנה מחכים לכם חומרים טובים, אווירה רגועה ויחס אישי. בחרו את המסגרת שמתאימה לכם, והשאר עליי.</p>
+        </header>
+
+        <div class="stack">
+          <!-- Weekly -->
+          <article class="svc svc--weekly" id="svc-weekly" style="--i:0" aria-labelledby="svc-weekly-title">
+            <div class="svc__body">
+              <p class="svc__tag">חוג קבוע</p>
+              <h3 class="svc__title" id="svc-weekly-title">סדנאות שבועיות</h3>
+              <p class="svc__lead">חוג יצירה קבוע שמחכה לכם פעם או פעמיים בשבוע. מגיעים, מתיישבים ליד השולחן, ולכמה שעות יש רק צבע, חומר וידיים עסוקות.</p>
+              <ul class="svc__list">
+                <li>בכל מפגש טכניקה וחומר חדשים</li>
+                <li>קבוצה קטנה ויחס אישי לכל משתתף</li>
+                <li>כל החומרים והכלים כלולים</li>
+                <li>מתאים גם למי שלא החזיק מכחול מאז הגן</li>
+              </ul>
+              <div class="svc__for">
+                <span class="svc__for-label">מתאים ל:</span>
+                <span class="tag">מתחילים</span><span class="tag">ממשיכים</span><span class="tag">כל מי שצריך זמן לעצמו</span>
+              </div>
+              <a class="btn btn--primary" href="#contact" data-pick="weekly">לשריון מקום בחוג</a>
+            </div>
+            <div class="svc__art">
+              <canvas class="wc" data-scene="weekly" aria-hidden="true"></canvas>
+              <ol class="week" aria-hidden="true">
+                <li>א׳</li><li class="is-on">ב׳</li><li>ג׳</li><li>ד׳</li><li class="is-on">ה׳</li><li>ו׳</li><li>ש׳</li>
+              </ol>
+              <span class="svc__caption">פעם או פעמיים בשבוע</span>
+            </div>
+          </article>
+
+          <!-- Events -->
+          <article class="svc svc--events" id="svc-events" style="--i:1" aria-labelledby="svc-events-title">
+            <div class="svc__body">
+              <p class="svc__tag">אני מגיעה אליכם</p>
+              <h3 class="svc__title" id="svc-events-title">סדנאות באירועים</h3>
+              <p class="svc__lead">מזמינים אותי לאירוע, ואני מגיעה עם כל הציוד והופכת אותו לחוויה צבעונית שכולם משתתפים בה. כל אורח יוצא עם יצירה שעשה בעצמו.</p>
+              <ul class="svc__list">
+                <li>סדנה מותאמת לגיל, לקהל ולאופי האירוע</li>
+                <li>כל החומרים והציוד מגיעים איתי</li>
+                <li>הקמה, הנחיה וסידור בסוף עליי</li>
+                <li>מזכרת אישית לכל משתתף</li>
+              </ul>
+              <div class="svc__for">
+                <span class="svc__for-label">מתאים ל:</span>
+                <span class="tag">ימי הולדת</span><span class="tag">בת ובר מצווה</span><span class="tag">מסיבות רווקות</span><span class="tag">ימי גיבוש</span><span class="tag">ערבי נשים</span>
+              </div>
+              <a class="btn btn--primary" href="#contact" data-pick="events">להזמין סדנה לאירוע</a>
+            </div>
+            <div class="svc__art">
+              <canvas class="wc" data-scene="events" aria-hidden="true"></canvas>
+              <span class="svc__caption">חוגגים ביצירה</span>
+            </div>
+          </article>
+
+          <!-- Private -->
+          <article class="svc svc--private" id="svc-private" style="--i:2" aria-labelledby="svc-private-title">
+            <div class="svc__body">
+              <p class="svc__tag">רק בשבילכם</p>
+              <h3 class="svc__title" id="svc-private-title">סדנאות פרטיות</h3>
+              <p class="svc__lead">מפגש יצירה אינטימי לזוג, למשפחה או לחבורה. זמן איכות אמיתי, בלי מסכים ובלי לחץ, ויצירה משותפת שנשארת איתכם גם אחרי.</p>
+              <ul class="svc__list">
+                <li>לזוגות, למשפחות, לחברות ולאחד על אחד</li>
+                <li>בוחרים יחד את הטכניקה והנושא</li>
+                <li>קצב אישי ותשומת לב מלאה</li>
+                <li>רעיון מקסים למתנה</li>
+              </ul>
+              <div class="svc__for">
+                <span class="svc__for-label">מתאים ל:</span>
+                <span class="tag">דייט זוגי</span><span class="tag">זמן משפחה</span><span class="tag">ערב חברות</span><span class="tag">מתנה ליום הולדת</span>
+              </div>
+              <a class="btn btn--primary" href="#contact" data-pick="private">לתיאום סדנה פרטית</a>
+            </div>
+            <div class="svc__art">
+              <canvas class="wc" data-scene="private" aria-hidden="true"></canvas>
+              <span class="svc__caption">כשהצבעים נפגשים</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ How it works ============ -->
+    <section class="section how" id="how" aria-labelledby="how-title">
+      <div class="wrap">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow">איך זה עובד</p>
+          <h2 id="how-title">מהודעה ראשונה ועד יצירה על הקיר</h2>
+        </header>
+
+        <div class="how__steps-wrap">
+          <svg class="how__path" viewBox="0 0 1000 100" aria-hidden="true">
+            <defs>
+              <linearGradient id="how-grad" x1="1" x2="0" y1="0" y2="0">
+                <stop offset="0" stop-color="#EE84A8"/>
+                <stop offset=".35" stop-color="#FFAA78"/>
+                <stop offset=".7" stop-color="#8CC484"/>
+                <stop offset="1" stop-color="#8FB9E6"/>
+              </linearGradient>
+            </defs>
+            <path class="how__path-base" d="M875 50C790 0 710 0 625 50S460 100 375 50 210 0 125 50"/>
+            <path class="how__path-ink" pathLength="1" d="M875 50C790 0 710 0 625 50S460 100 375 50 210 0 125 50"/>
+          </svg>
+          <span class="how__line" aria-hidden="true"><span></span></span>
+
+          <ol class="steps">
+            <li class="step" style="--tint:var(--rose)">
+              <span class="step__dot">1</span>
+              <h3 class="step__title">שולחים הודעה</h3>
+              <p>מספרים לי מה בא לכם: חוג קבוע, סדנה לאירוע או מפגש פרטי.</p>
+            </li>
+            <li class="step" style="--tint:var(--apricot)">
+              <span class="step__dot">2</span>
+              <h3 class="step__title">מתאימים יחד</h3>
+              <p>בוחרים מועד, טכניקה ונושא שמתאימים בדיוק לכם.</p>
+            </li>
+            <li class="step" style="--tint:var(--sage)">
+              <span class="step__dot">3</span>
+              <h3 class="step__title">מגיעים ויוצרים</h3>
+              <p>אני דואגת לחומרים, להנחיה ולאווירה. אתם רק נהנים.</p>
+            </li>
+            <li class="step" style="--tint:var(--cerulean)">
+              <span class="step__dot">4</span>
+              <h3 class="step__title">לוקחים הביתה</h3>
+              <p>יצירה שעשיתם במו ידיכם, וחשק לחזור לעוד אחת.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Techniques (horizontal) ============ -->
+    <section class="techniques" id="techniques" aria-labelledby="tech-title">
+      <div class="tech__pin">
+        <div class="wrap tech__head">
+          <div>
+            <p class="eyebrow">מה יוצרים</p>
+            <h2 id="tech-title">חומרים, צבעים וטכניקות</h2>
+          </div>
+          <div class="tech__aside">
+            <p>כל תקופה מביאה איתה חומר חדש להתנסות בו. הנה טעימה ממה שמחכה לכם על השולחן.</p>
+            <p class="tech__hint" aria-hidden="true"><span class="only-pin">ממשיכים לגלול, והטכניקות מתגלות</span><span class="only-native">מחליקים הצידה לעוד טכניקות</span></p>
+          </div>
+        </div>
+
+        <div class="tech__scroller">
+          <ul class="tech__track">
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-watercolor" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">צבעי מים</h3>
+              <p class="tech__desc">שכבות שקופות של צבע ומים שנפגשות על הנייר ומפתיעות כל פעם מחדש.</p>
+            </li>
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-acrylic" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">ציור באקריליק</h3>
+              <p class="tech__desc">צבע עשיר ומלא נוכחות על קנבס, עם מכחולים רחבים ומרית.</p>
+            </li>
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-clay" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">פיסול בחימר</h3>
+              <p class="tech__desc">קערות, כוסות ופסלונים קטנים שנבנים לאט בין כפות הידיים.</p>
+            </li>
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-collage" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">קולאז׳</h3>
+              <p class="tech__desc">גוזרים, קורעים ומדביקים נייר, בדים ותמונות לסיפור חדש.</p>
+            </li>
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-macrame" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">מקרמה</h3>
+              <p class="tech__desc">חבלים, קשרים ודוגמאות שהופכים לקישוט רך לקיר.</p>
+            </li>
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-embroidery" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">רקמה</h3>
+              <p class="tech__desc">חוט, מחט וחישוק. תפר אחר תפר עד שנוצרת תמונה אישית.</p>
+            </li>
+            <li class="tech" data-tilt>
+              <div class="tech__art"><canvas class="wc" data-scene="t-print" aria-hidden="true"></canvas></div>
+              <h3 class="tech__name">הדפס וחותמות</h3>
+              <p class="tech__desc">מגלפים חותמת ומדפיסים דוגמאות חוזרות על נייר ועל בד.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="wrap">
+          <div class="tech__progress" aria-hidden="true"><span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="wrap about__grid">
+        <figure class="about__art" data-reveal>
+          <div class="frame-egg" data-speed="-0.05">
+            <canvas class="wc" data-scene="about" aria-hidden="true"></canvas>
+          </div>
+          <figcaption class="about__quote">״כל אחד יכול ליצור. באמת.״</figcaption>
+          <svg class="doodle doodle--about-sparkle" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        </figure>
+
+        <div class="about__copy" data-reveal>
+          <p class="eyebrow">נעים מאוד</p>
+          <h2 id="about-title">היי, אני אביה</h2>
+          <p>אמנית ומנחת סדנאות יצירה. אני מאמינה שכל אחד ואחת יכולים ליצור, ושכשהידיים עסוקות בצבע ובחומר, הראש סוף סוף נח.</p>
+          <p>בסטודיו שלי אין ״לא יפה״ ואין ״אני לא יודעת לצייר״. יש סקרנות, הרבה צבע ומקום לטעות ולגלות. המטרה שלי פשוטה: שתצאו מכל סדנה קצת יותר שמחים ממה שנכנסתם.</p>
+          <p class="about__sign">מחכה לכם בסטודיו,<br>אביה</p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="values">
+          <li class="value" data-reveal style="--d:0; --tint:var(--sage)">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 28V15"/><path d="M16 17c0-5.5 4-8.5 9.5-8.5 0 5.5-4 8.5-9.5 8.5z"/><path d="M16 20.5c0-4.5-3.2-7.5-8.5-7.5 0 4.5 3.2 7.5 8.5 7.5z"/></svg>
+            </span>
+            <h3>לא צריך ניסיון</h3>
+            <p>מתחילים מאפס, ואני לידכם בכל צעד.</p>
+          </li>
+          <li class="value" data-reveal style="--d:90; --tint:var(--naples)">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 4C9 4 4 9 4 15.5S9.2 28 15.2 28c2 0 2.6-1.5 2-3s0-3.2 2-3.2h3C26 21.8 28 19.5 28 16 28 9.2 22.6 4 16 4z"/><circle cx="10" cy="13.5" r="1.6"/><circle cx="14.5" cy="9" r="1.6"/><circle cx="20.5" cy="9.5" r="1.6"/><circle cx="23.5" cy="14.5" r="1.6"/></svg>
+            </span>
+            <h3>הכל כלול</h3>
+            <p>חומרים איכותיים, כלים וסינרים מחכים לכם.</p>
+          </li>
+          <li class="value" data-reveal style="--d:180; --tint:var(--lavender)">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><circle cx="16" cy="11" r="3.6"/><path d="M9 25c0-4 3-7 7-7s7 3 7 7"/><circle cx="7" cy="14" r="2.6"/><path d="M2.5 24c0-3 2-5.2 4.5-5.2"/><circle cx="25" cy="14" r="2.6"/><path d="M29.5 24c0-3-2-5.2-4.5-5.2"/></svg>
+            </span>
+            <h3>קבוצות קטנות</h3>
+            <p>מקום לכל אחד, ותשומת לב אישית לאורך כל המפגש.</p>
+          </li>
+          <li class="value" data-reveal style="--d:270; --tint:var(--rose)">
+            <span class="value__icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><rect x="5" y="6" width="22" height="20" rx="2.5"/><path d="M5 21.5l6.5-6.5 5 5 4-3.2 6.5 5.7"/><circle cx="21" cy="11.5" r="2"/></svg>
+            </span>
+            <h3>יוצאים עם יצירה</h3>
+            <p>כל מפגש מסתיים במשהו שעשיתם בעצמכם.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq__grid">
+        <header class="section-head faq__head" data-reveal>
+          <p class="eyebrow">שאלות ותשובות</p>
+          <h2 id="faq-title">מה ששואלים אותי הכי הרבה</h2>
+          <svg class="faq__swirl" aria-hidden="true"><use href="#i-swirl"/></svg>
+        </header>
+
+        <div class="faq__list" data-reveal>
+          <details class="qa">
+            <summary>צריך לדעת לצייר?</summary>
+            <div class="qa__a"><p>ממש לא. הסדנאות בנויות כך שכל אחד ואחת ייצאו עם יצירה שהם גאים בה, גם אם זו הפעם הראשונה שלהם.</p></div>
+          </details>
+          <details class="qa">
+            <summary>מה צריך להביא?</summary>
+            <div class="qa__a"><p>רק את עצמכם. כל החומרים והכלים מחכים לכם. כדאי להגיע בבגדים שלא אכפת לכם שיתלכלכו קצת.</p></div>
+          </details>
+          <details class="qa">
+            <summary>לאילו גילאים זה מתאים?</summary>
+            <div class="qa__a"><p>יש סדנאות למבוגרים, לילדים ולמשפחות. בסדנה פרטית או באירוע אני מתאימה את הטכניקה לגיל המשתתפים.</p></div>
+          </details>
+          <details class="qa">
+            <summary>כמה משתתפים יכולים להיות בסדנה באירוע?</summary>
+            <div class="qa__a"><p>זה תלוי במקום ובסוג הסדנה. ספרו לי על האירוע, ונבנה יחד את מה שמתאים לכם.</p></div>
+          </details>
+          <details class="qa">
+            <summary>אפשר להצטרף לחוג השבועי באמצע?</summary>
+            <div class="qa__a"><p>כן. כל מפגש עומד בפני עצמו, כך שאפשר להצטרף בכל שלב, לפי המקום הפנוי בקבוצה.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+        <div class="contact__copy" data-reveal>
+          <p class="eyebrow">בואו ניצור</p>
+          <h2 id="contact-title">בואו ניצור משהו יפה ביחד</h2>
+          <p class="contact__lead">ספרו לי מה בא לכם, ואחזור אליכם עם כל הפרטים. אפשר גם פשוט לשלוח הודעה בוואטסאפ.</p>
+
+          <ul class="channels">
+            <li>
+              <a class="channel" data-whatsapp href="#contact" target="_blank" rel="noopener">
+                <span class="channel__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 4.5C9.6 4.5 4.5 9.4 4.5 15.6c0 2.2.6 4.2 1.8 6L5 27.5l6.1-1.6c1.5.8 3.2 1.2 4.9 1.2 6.4 0 11.5-4.9 11.5-11.1S22.4 4.5 16 4.5z"/><path d="M11.8 11.6c.3-.7 1.4-.9 1.7-.3l1 2.1c.2.4 0 .8-.3 1.1l-.5.5c.6 1.4 1.8 2.6 3.2 3.2l.5-.5c.3-.3.7-.5 1.1-.3l2.1 1c.6.3.4 1.4-.3 1.7-3.6 1.6-9.9-4.7-8.5-8.5z"/></svg></span>
+                <span class="channel__text"><strong>וואטסאפ</strong><span>הדרך הכי מהירה להגיע אליי</span></span>
+              </a>
+            </li>
+            <li>
+              <a class="channel" data-instagram href="#contact" target="_blank" rel="noopener">
+                <span class="channel__icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="5" width="22" height="22" rx="7"/><circle cx="16" cy="16" r="5"/><circle cx="22.2" cy="9.8" r="1.2"/></svg></span>
+                <span class="channel__text"><strong>אינסטגרם</strong><span>יצירות מהסדנאות האחרונות</span></span>
+              </a>
+            </li>
+          </ul>
+          <svg class="contact__bird" aria-hidden="true"><use href="#i-bird"/></svg>
+        </div>
+
+        <div class="contact__card" data-reveal style="--d:120">
+          <form class="form" id="contact-form" novalidate>
+            <fieldset class="form__types">
+              <legend>על איזו סדנה חשבתם?</legend>
+              <div class="choices">
+                <label class="choice" for="type-weekly"><input type="radio" name="type" id="type-weekly" value="weekly" checked><span>חוג שבועי</span></label>
+                <label class="choice" for="type-events"><input type="radio" name="type" id="type-events" value="events"><span>סדנה לאירוע</span></label>
+                <label class="choice" for="type-private"><input type="radio" name="type" id="type-private" value="private"><span>סדנה פרטית</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="f-name">איך קוראים לך?</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__err" id="f-name-err" hidden>נשמח לדעת איך לפנות אליך. כתבו שם, אפילו רק שם פרטי.</p>
+            </div>
+
+            <div class="field">
+              <label for="f-phone">מספר טלפון</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" dir="ltr" placeholder="050-0000000" required aria-describedby="f-phone-err">
+              <p class="field__err" id="f-phone-err" hidden>המספר נראה קצר מדי. כתבו מספר מלא, למשל 050-1234567.</p>
+            </div>
+
+            <div class="field">
+              <label for="f-notes">רוצים לספר עוד? <span class="field__opt">(לא חובה)</span></label>
+              <textarea id="f-notes" name="notes" rows="3" placeholder="תאריך, מספר משתתפים, סוג האירוע..."></textarea>
+            </div>
+
+            <button class="btn btn--primary btn--block" type="submit">שליחה בוואטסאפ</button>
+            <p class="form__note">הפרטים נשלחים ישירות לאביה בוואטסאפ.</p>
+          </form>
+
+          <div class="sent" id="sent" hidden>
+            <svg class="sent__bird" aria-hidden="true"><use href="#i-bird"/></svg>
+            <h3 class="sent__title" id="sent-title" tabindex="-1">ההודעה מוכנה!</h3>
+            <p>וואטסאפ אמור להיפתח עם ההודעה הזאת. אם זה לא קרה, אפשר לפתוח אותו מכאן:</p>
+            <blockquote class="sent__msg" id="sent-msg"></blockquote>
+            <div class="sent__actions">
+              <a class="btn btn--primary" id="sent-link" href="#contact" target="_blank" rel="noopener">פתיחה בוואטסאפ</a>
+              <button class="btn btn--ghost" type="button" id="sent-edit">חזרה לטופס</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div class="footer__brand">
+        <a class="logo logo--light" href="#top" aria-label="הסטודיו של אביה, חזרה לראש העמוד">
+          <svg class="logo__bird" aria-hidden="true"><use href="#i-bird"/></svg>
+          <span class="logo__text">
+            <span class="logo__he">הסטודיו של אביה</span>
+            <span class="logo__en" lang="en" dir="ltr">Aviary's Studio Art</span>
+          </span>
+        </a>
+        <p>סדנאות יצירה ואומנות: חוג שבועי, סדנאות לאירועים וסדנאות פרטיות.</p>
+      </div>
+      <nav class="footer__nav" aria-label="ניווט בתחתית העמוד">
+        <a href="#services">הסדנאות</a>
+        <a href="#how">איך זה עובד</a>
+        <a href="#techniques">מה יוצרים</a>
+        <a href="#about">קצת עליי</a>
+        <a href="#faq">שאלות</a>
+        <a href="#contact">צרו קשר</a>
+      </nav>
+    </div>
+    <div class="wrap footer__base">
+      <p>© 2026 <span lang="en" dir="ltr">Aviary's Studio Art</span> · כל הזכויות שמורות</p>
+    </div>
+  </footer>
+
+</div>
+<!--SITE:END-->
+</body>
+</html>
